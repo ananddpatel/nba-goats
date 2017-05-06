@@ -10,9 +10,6 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="http://www.spotify-thedrop.com/styles/main.14219f9b.css">
-        <link rel="stylesheet" type="text/css" href="http://www.spotify-thedrop.com/styles/vendor.d5e73916.css">
-
         <!-- Styles -->
         <style>
             html, body {

@@ -1,11 +1,15 @@
 <div class="row">
     @if(count(Auth::user()->images))
     @foreach(Auth::user()->images as $image)
-    <div class="col-xs-6 col-md-3">
-        <img src="{{$image->getThumbnail()}}">
+    <div class="col-xs-6 col-md-4 col-lg-3">
+         <div class="text-center">
+            <a href="{{$image->url}}">
+                <img src="{{$image->getThumbnail()}}">
+            </a>
+        </div>
         <div class="text-center"><strong>{{$image->title}}</strong></div>
         <div class="text-center">
-        ELO: {{$image->elo}} | WINS: {{$image->wins}}</div>
+        ELO: {{$image->elo}} | W: {{$image->wins}} | L: {{$image->losses}}</div>
     </div>
     @endforeach
     @else
