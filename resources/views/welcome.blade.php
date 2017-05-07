@@ -68,6 +68,7 @@
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
+                    <a href="/leaderboard">Leaderboard</a>
                     @if (Auth::check())
                         <a href="{{ url('/home') }}">My GOATs</a>
                     @else
@@ -81,8 +82,7 @@
                 <div class="title m-b-md">
                     NBA GOATs
                 </div>
-                {{-- <button href="/play" type="button" class="btn btn-primary">play</button> --}}
-                <a href="/play" role="button" class="btn btn-drop btn-lg">Play Now</a>
+                <a href="/play" role="button" class="btn btn-primary btn-lg">Play Now</a>
             </div>
 
         </div>

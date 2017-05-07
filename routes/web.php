@@ -11,6 +11,7 @@ Route::get('/home', 'ImageController@index')->name('home');
 // Game stuff
 Route::get('/play', 'GameController@index');
 Route::post('/battle/{winner}-{loser}', 'GameController@battle');
+Route::get('/leaderboard', 'GameController@leaderboard');
 
 // Submit stuff
 Route::get('/submit', 'ImageController@create');

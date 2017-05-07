@@ -19,6 +19,41 @@
             'csrfToken' => csrf_token(),
         ]) !!};
     </script>
+
+    <style type="text/css">
+        .thumbnail img{
+            max-width: 100%; /* do not stretch the bootstrap column */
+        }
+
+        .img-wrapper{
+             width: 100%; 
+            padding-bottom: 150%; /* your aspect ratio here! */
+            position: relative;
+        }
+
+        .img-wrapper img{
+            position: absolute;
+            top: 0; 
+            bottom: 0; 
+            left: 0; 
+            right: 0;
+            min-height: 100%;
+        }
+
+        label > input:checked + img { 
+          border: 3px solid #e00010;
+        }
+
+        th {
+           text-align: center;
+        }
+
+/*        td {
+            vertical-align: middle !important;
+        }*/
+        
+    </style>
+
 </head>
 <body>
     <div id="app">
@@ -49,6 +84,7 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
+                        <li class="dropdown"><a href="/leaderboard">Leaderboard</a></li>
                         @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
