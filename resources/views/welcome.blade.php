@@ -13,7 +13,7 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
+                background-color: #dfdfdf;
                 color: #636b6f;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 100;
@@ -50,7 +50,7 @@
             }
 
             .links > a {
-                color: #636b6f;
+                color: #3D3D3D;
                 padding: 0 25px;
                 font-size: 12px;
                 font-weight: 600;
@@ -79,8 +79,11 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    NBA GOATs
+               <div class="title m-b-md rounded" style="border: round;">
+                    <span style="color: red;">N</span>
+                    <span style="color: white;">B</span>
+                    <span style="color: blue;">A</span>
+                    <img src="{{asset('img/goat.png')}}" style="width: 127px;">
                 </div>
                 <a href="/play" role="button" class="btn btn-primary btn-lg">Play Now</a>
             </div>
