@@ -36,7 +36,7 @@ class ImageController extends Controller
     public function store()
     {
         $this->validate(request(), [
-                'url' => ['required', 'regex:#^https?:\/\/(\w+\.)?imgur.com\/(\w*\d\w*)+(\.(jpg|png))?$#'],
+                'url' => ['required', 'regex:#^https?:\/\/(\w+\.)?imgur.com\/(\w*)+(\.(jpg|png))?$#'],
                 'title' => 'required'], 
                 ['url.regex' => 'the imgur image needs to be of .jpg or .png format']
             );
