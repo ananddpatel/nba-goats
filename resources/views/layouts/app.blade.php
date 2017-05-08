@@ -84,6 +84,7 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
+                        <li class="dropdown"><a href="/play"><button class="btn btn-primary btn-sm">Play</button></a></li>
                         <li class="dropdown"><a href="/leaderboard">Leaderboard</a></li>
                         @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Login</a></li>
