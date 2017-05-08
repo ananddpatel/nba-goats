@@ -3,7 +3,7 @@
     @foreach(Auth::user()->images as $image)
     <div class="col-xs-6 col-md-4 col-lg-3">
          <div class="text-center">
-            <a href="{{$image->url}}">
+            <a href="/comments/{{$image->id}}">
                 <img src="{{$image->getThumbnail()}}">
             </a>
         </div>

@@ -20,7 +20,7 @@
 						{{-- <td><img src="{{$player->getThumbnail()}}"></img></td> --}}
 						<td>
 							<div class="row">
-								<img class="col-sm-12 col-md-4" src="{{$player->getThumbnail()}}">
+								<a href="/comments/{{$player->id}}"><img class="col-sm-12 col-md-4" src="{{$player->getThumbnail()}}"></a>
 								<div class="col-sm-12-col-md-4">{{$player->title}}</div>
 							</div>
 						</td>
