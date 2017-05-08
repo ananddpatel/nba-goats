@@ -35,11 +35,23 @@ class ImageController extends Controller
 
     public function store()
     {
+        $this->validate(request(), [
+                'url' => ['required', 'regex:#^https?:\/\/(\w+\.)?imgur.com\/(\w*\d\w*)+(\.(jpg|png))?$#'],
+                'title' => 'required'], 
+                ['url.regex' => 'the imgur image needs to be of .jpg or .png format']
+            );
+
         Image::create([
             'url' => request('url'),
             'title' => request('title'),
             'user_id' => auth()->user()->id
         ]);
         return redirect('home');
+    }
+
+    public function destroy(Image $image)
+    {
+        $image->delete();
+        return back();
     }
 }

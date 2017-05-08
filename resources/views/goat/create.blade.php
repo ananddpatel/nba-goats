@@ -12,16 +12,18 @@
 	                	{{csrf_field()}}
 						<div class="input-group">
 						  <span class="input-group-addon">Title</span>
-						  <input type="text" name="title" class="form-control">
+						  <input type="text" name="title" class="form-control" >
 						</div>
 						<br>
 						<div class="input-group">
 						  <span class="input-group-addon">Imgur URL</span>
-						  <input type="text" name="url" class="form-control">
+						  <input type="text" name="url" class="form-control" >
 						</div>
 						<br>
 						<div class="text-center"><button class="btn btn-success">Submit</button></div>
 					</form>
+					<br>
+					@include('layouts.errors')
             </div>
         </div>
     </div>

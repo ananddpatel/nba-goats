@@ -21,6 +21,7 @@
 				</tr>
 			</tbody>
 		</table>
+		<div class="text-center"><a href="/comments/{{$winner->id}}" class="btn btn-primary btn-sm">Comments</a></div>
 	</div>
 	<div class="col-xs-6 col-md-4">
 		<table class="table table-condensed table-bordered text-center">
@@ -44,5 +45,6 @@
 				</tr>
 			</tbody>
 		</table>
+		<div class="text-center"><a href="/comments/{{$loser->id}}" class="btn btn-primary btn-sm">Comments</a></div>
 	</div>
 </div>

@@ -11,7 +11,9 @@
 							<div class="img-wrapper">
 								<label>
 									<input id="image1" type="radio" name="image" value="{{$goats->first()->id}}" onclick="document.getElementById('battle-form').action = 'battle/' + this.value + '-' + document.getElementById('image2').value;">
-									<img name="image" src="{{$goats->first()->url}}">
+									{{-- <img name="image" src="{{$goats->first()->url}}"> --}}
+									<blockquote class="imgur-embed-pub" lang="en" data-id="jgcOX7o"><a href="//imgur.com/jgcOX7o"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+									{{-- <img name="image" src="{{asset('img/hakeem.jpg')}}" onload="console.log('hello')"> --}}
 								</label>
 							</div>
 						</div>
@@ -24,6 +26,7 @@
 								<label>
 									<input id="image2" type="radio" name="image" value="{{$goats->last()->id}}" onclick="document.getElementById('battle-form').action = 'battle/' + this.value + '-' + document.getElementById('image1').value;">
 									<img class="img-fluid" name="image" src="{{$goats->last()->url}}">
+									{{-- <img class="img-fluid" name="image" src="{{asset('img/hakeem.jpg')}}"> --}}
 								</label>
 							</div>
 						</div>

@@ -9,7 +9,15 @@
         </div>
         <div class="text-center"><strong>{{$image->title}}</strong></div>
         <div class="text-center">
-        ELO: {{$image->elo}} | W: {{$image->wins}} | L: {{$image->losses}}</div>
+            ELO: {{$image->elo}} | W: {{$image->wins}} | L: {{$image->losses}}
+        </div>
+        <div class="text-center">
+            <form method="POST" action="/submit/{{$image->id}}">
+                {{ method_field('DELETE') }}
+                {{csrf_field()}}
+                <button class="btn btn-danger btn-sm">Delete</button>
+            </form>
+        </div>
     </div>
     @endforeach
     @else
